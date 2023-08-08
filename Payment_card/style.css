@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: lightblue;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    width: 100%;
+    max-width: 450px;
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+
+}
+
+.text{
+    padding: 7%;
+    text-align: center;
+}
+
+.text h2{
+    color: hsl(223, 47%, 23%);
+    font-weight: 800;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.text p{
+    color: #8a8a8a;
+    margin-bottom: 10px;
+}
+
+.picture img{
+    max-width: 450px;
+    border-radius: 20px 20px 0 0;
+
+}
+
+.small-box{
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 25px 10px 25px;
+    padding: 20px;
+}
+
+.small-box img{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.small-box .small-text{
+    margin-left: 20px;
+}
+
+.small-box .small-text h4{
+    font-weight: 800;
+    font-size: 15px;
+    color: hsl(223, 47%, 23%);
+}
+
+.small-box .small-text p{
+    font-size: 14px;
+    color: #8a8a8a;
+}
+
+.small-box a{
+    font-weight: 800;
+    color: hsl(223, 47%, 23%);
+    transform: color .3s ease;
+}
+
+.small-box a:hover{
+    text-decoration: none;
+    color:hsl(245, 75%, 52%);
+}
+
+.btn-1{
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 17px;
+    margin: 30px 20px;
+    transition: background-color .3s ease;
+    
+}
+
+.btn-1:hover{
+    background-color: hsl(224, 23%, 55%);
+}
+
+.btn-2{
+    display: block;
+    text-decoration: none;
+    font-weight: 800;
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    margin: 30px 20px;
+    transition: color .3s ease;
+}
+
+.btn-2:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+@media only screen and (max-width:425px) {
+    body{
+        font-size: 14px;
+    }
+
+    .container{
+        max-width: 87%;
+    }
+
+    .box h2{
+        font-size: 23px;
+    }
+
+    .small-box{
+        padding: 12px;
+    }
+
+    .small-box .small-text{
+        margin-left: 10px;
+    }
+
+    .btn-1,.btn-2, .small-box a{
+        font-size: 13px;
+    }
+
+    .text{
+        padding: 9%, 7%;
+    }
+}
